@@ -15,8 +15,8 @@ const Footer = () => (
 
         <div>
           <h4 className="text-primary font-semibold mb-4">Quick Links</h4>
-          <div className="space-y-2">
-            {["Home", "Founder", "Programs", "Results", "Contact"].map((l) => (
+          {/* <div className="space-y-2">
+               {["Home", "Founder", "Programs", "Results", "Contact"].map((l) => (
               <Link
                 key={l}
                 to={l === "Home" ? "/" : `/${l.toLowerCase()}`}
@@ -24,6 +24,17 @@ const Footer = () => (
               >
                 {l}
               </Link>
+            ))}
+          </div> */}
+
+          <div className="space-y-2">
+            {["Home", "Founder", "Programs", "Results", "Contact"].map((l) => (
+              <span
+                key={l}
+                className="block text-sm text-muted-foreground"
+              >
+                {l}
+              </span>
             ))}
           </div>
         </div>

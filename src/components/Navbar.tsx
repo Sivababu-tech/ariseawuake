@@ -4,11 +4,16 @@ import { Menu, X } from "lucide-react";
 import logo from "@/assets/website-logo.png";
 
 const navLinks = [
+  // { label: "Home", path: "/" },
+  // { label: "Founder", path: "/founder" },
+  // { label: "Programs", path: "/programs" },
+  // { label: "Results", path: "/results" },
+  // { label: "Contact", path: "/contact" },
   { label: "Home", path: "/" },
-  { label: "Founder", path: "/founder" },
-  { label: "Programs", path: "/programs" },
-  { label: "Results", path: "/results" },
-  { label: "Contact", path: "/contact" },
+  { label: "Founder", path: "/" },
+  { label: "Programs", path: "/" },
+  { label: "Results", path: "/" },
+  { label: "Contact", path: "/" },
 ];
 
 const Navbar = () => {
