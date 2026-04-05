@@ -110,7 +110,6 @@ const ContactMapSection = () => {
                                                 setForm({ ...form, name: e.target.value })
                                             }
                                             className="w-full bg-background border border-border rounded-md px-4 py-2.5 text-sm focus:outline-none focus:border-primary transition-colors"
-                                            placeholder="Enter your name"
                                         />
                                     </div>
 
@@ -126,7 +125,6 @@ const ContactMapSection = () => {
                                                 setForm({ ...form, phone: e.target.value })
                                             }
                                             className="w-full bg-background border border-border rounded-md px-4 py-2.5 text-sm focus:outline-none focus:border-primary transition-colors"
-                                            placeholder="+91 XXXXX XXXXX"
                                         />
                                     </div>
 
@@ -141,7 +139,6 @@ const ContactMapSection = () => {
                                                 setForm({ ...form, email: e.target.value })
                                             }
                                             className="w-full bg-background border border-border rounded-md px-4 py-2.5 text-sm focus:outline-none focus:border-primary transition-colors"
-                                            placeholder="your@email.com"
                                         />
                                     </div>
 
@@ -157,7 +154,6 @@ const ContactMapSection = () => {
                                                 setForm({ ...form, message: e.target.value })
                                             }
                                             className="w-full bg-background border border-border rounded-md px-4 py-2.5 text-sm focus:outline-none focus:border-primary transition-colors resize-none"
-                                            placeholder="I'm interested in..."
                                         />
                                     </div>
 

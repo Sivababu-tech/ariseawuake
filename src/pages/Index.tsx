@@ -107,7 +107,7 @@ const Index = () => (
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="text-primary font-medium tracking-widest uppercase text-sm mb-4"
+          className="text-primary font-display font-medium tracking-widest uppercase text-sm mb-4"
         >
           Arise Awake Personality Development
         </motion.p>
@@ -115,7 +115,7 @@ const Index = () => (
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6"
+          className="text-4xl md:text-[3.5rem] font-bold leading-tight mb-6"
         >
           Transform Your{" "}
           <span className="text-gradient-gold">Confidence</span>
@@ -145,7 +145,7 @@ const Index = () => (
             Book Free Demo
           </a>
           <Link
-            to="/programs"
+            to="#"
             className="border border-primary/50 text-primary px-8 py-3.5 rounded-md font-semibold text-lg hover:bg-primary/10 transition-colors"
           >
             Explore Programs
@@ -220,14 +220,14 @@ const Index = () => (
             height={256}
           />
           <div>
-            <p className="text-primary text-sm font-medium tracking-widest uppercase mb-2">Meet the Founder</p>
+            <p className="text-primary font-display text-sm font-medium tracking-widest uppercase mb-2">Meet the Founder</p>
             <h3 className="text-2xl md:text-3xl font-bold mb-3">Shiwa G Shankar</h3>
             <p className="text-muted-foreground leading-relaxed mb-4">
               A passionate personality development trainer and public speaking coach who has transformed the lives of
               thousands of students and professionals. His mission: to make every individual speak with confidence.
             </p>
             <Link
-              to="/founder"
+              to="#"
               className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
             >
               Know His Story <ArrowRight size={16} />
@@ -260,7 +260,7 @@ const Index = () => (
         </div>
         <div className="text-center mt-10">
           <Link
-            to="/programs"
+            to="#"
             className="inline-flex items-center gap-2 bg-gradient-gold text-primary-foreground px-6 py-3 rounded-md font-semibold hover:opacity-90 transition-opacity"
           >
             View All Programs <ArrowRight size={16} />

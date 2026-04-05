@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin } from "lucide-react";
-import logo from "@/assets/website-logo.png";
+import logo from "@/assets/logos.png";
 
 const Footer = () => (
   <footer className="border-t border-border py-12">

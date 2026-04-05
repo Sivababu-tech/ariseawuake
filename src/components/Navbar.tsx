@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/website-logo.png";
+import logo from "@/assets/logos.png";
 
 const navLinks = [
   // { label: "Home", path: "/" },
@@ -9,11 +9,11 @@ const navLinks = [
   // { label: "Programs", path: "/programs" },
   // { label: "Results", path: "/results" },
   // { label: "Contact", path: "/contact" },
-  { label: "Home", path: "/" },
-  { label: "Founder", path: "/" },
-  { label: "Programs", path: "/" },
-  { label: "Results", path: "/" },
-  { label: "Contact", path: "/" },
+  { label: "Home", path: "#" },
+  { label: "Founder", path: "#" },
+  { label: "Programs", path: "#" },
+  { label: "Results", path: "#" },
+  { label: "Contact", path: "#" },
 ];
 
 const Navbar = () => {
@@ -33,9 +33,8 @@ const Navbar = () => {
             <Link
               key={link.path}
               to={link.path}
-              className={`text-sm font-medium tracking-wide transition-colors hover:text-primary ${
-                location.pathname === link.path ? "text-primary" : "text-foreground/70"
-              }`}
+              className={`text-sm font-medium tracking-wide transition-colors hover:text-primary ${location.pathname === link.path ? "text-primary" : "text-foreground/70"
+                }`}
             >
               {link.label}
             </Link>
@@ -64,9 +63,8 @@ const Navbar = () => {
               key={link.path}
               to={link.path}
               onClick={() => setOpen(false)}
-              className={`block py-3 text-sm font-medium tracking-wide border-b border-border/50 ${
-                location.pathname === link.path ? "text-primary" : "text-foreground/70"
-              }`}
+              className={`block py-3 text-sm font-medium tracking-wide border-b border-border/50 ${location.pathname === link.path ? "text-primary" : "text-foreground/70"
+                }`}
             >
               {link.label}
             </Link>
