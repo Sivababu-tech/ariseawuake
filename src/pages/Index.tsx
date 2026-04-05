@@ -172,7 +172,7 @@ const Index = () => (
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
                 <p.icon size={22} className="text-primary" />
               </div>
-              <p className="text-foreground/80 text-sm">{p.text}</p>
+              <p className="text-logo-gray text-sm">{p.text}</p>
             </motion.div>
           ))}
         </div>
@@ -322,7 +322,7 @@ const Index = () => (
                   <Star key={j} size={14} className="fill-primary text-primary" />
                 ))}
               </div>
-              <p className="text-foreground/80 text-sm italic mb-4">"{t.text}"</p>
+              <p className="text-logo-gray text-sm italic mb-4">"{t.text}"</p>
               <div>
                 <p className="font-semibold text-sm">{t.name}</p>
                 <p className="text-muted-foreground text-xs">{t.role}</p>
