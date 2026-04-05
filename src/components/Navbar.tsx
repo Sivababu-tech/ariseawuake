@@ -2,18 +2,14 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/logos.png";
+import EnquiryPopup from "./EnquiryPopup";
 
 const navLinks = [
-  // { label: "Home", path: "/" },
-  // { label: "Founder", path: "/founder" },
-  // { label: "Programs", path: "/programs" },
-  // { label: "Results", path: "/results" },
-  // { label: "Contact", path: "/contact" },
-  { label: "Home", path: "#" },
-  { label: "Founder", path: "#" },
-  { label: "Programs", path: "#" },
-  { label: "Results", path: "#" },
-  { label: "Contact", path: "#" },
+  { label: "Home", path: "/" },
+  { label: "Founder", path: "/founder" },
+  { label: "Programs", path: "/programs" },
+  { label: "Results", path: "/results" },
+  { label: "Contact", path: "/contact" },
 ];
 
 const Navbar = () => {
@@ -39,14 +35,13 @@ const Navbar = () => {
               {link.label}
             </Link>
           ))}
-          <a
-            href="https://wa.me/919876543210"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gradient-gold text-primary-foreground px-5 py-2 rounded-md text-sm font-semibold hover:opacity-90 transition-opacity"
-          >
-            Book Free Demo
-          </a>
+          <EnquiryPopup programName="Book Free Demo (Navbar)">
+            <button
+              className="bg-gradient-gold text-primary-foreground px-5 py-2 rounded-md text-sm font-semibold hover:opacity-90 transition-opacity"
+            >
+              Book Free Demo
+            </button>
+          </EnquiryPopup>
         </div>
 
         {/* Mobile toggle */}
@@ -69,14 +64,14 @@ const Navbar = () => {
               {link.label}
             </Link>
           ))}
-          <a
-            href="https://wa.me/919876543210"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block mt-4 text-center bg-gradient-gold text-primary-foreground px-5 py-2.5 rounded-md text-sm font-semibold"
-          >
-            Book Free Demo
-          </a>
+          <EnquiryPopup programName="Book Free Demo (Mobile Navbar)">
+            <button
+              onClick={() => setOpen(false)}
+              className="block w-full mt-4 text-center bg-gradient-gold text-primary-foreground px-5 py-2.5 rounded-md text-sm font-semibold"
+            >
+              Book Free Demo
+            </button>
+          </EnquiryPopup>
         </div>
       )}
     </nav>

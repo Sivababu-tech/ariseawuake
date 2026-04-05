@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { MessageCircle, Target, Users, Star, ArrowRight, Mic, Shield, TrendingUp } from "lucide-react";
@@ -8,44 +9,10 @@ import heroBg from "@/assets/hero-bg.jpg";
 import founderImg from "@/assets/founder.jpg";
 import transformImg from "@/assets/transformation.jpg";
 import ContactMapSection from "@/components/ContactMapSection";
-import { useEffect, useState } from "react";
-import { useInView } from "react-intersection-observer";
+import EnquiryPopup from "@/components/EnquiryPopup";
+import Counter from "@/components/Counter";
 
-const CountUp = ({ end, suffix = "" }: { end: number; suffix?: string }) => {
-  const [count, setCount] = useState(0);
 
-  const { ref, inView } = useInView({
-    triggerOnce: true,   // run only once
-    threshold: 0.3,      // 30% visible
-  });
-
-  useEffect(() => {
-    if (!inView) return;
-
-    let start = 0;
-    const duration = 1500;
-    const increment = end / (duration / 16);
-
-    const counter = setInterval(() => {
-      start += increment;
-      if (start >= end) {
-        setCount(end);
-        clearInterval(counter);
-      } else {
-        setCount(Math.floor(start));
-      }
-    }, 16);
-
-    return () => clearInterval(counter);
-  }, [inView, end]);
-
-  return (
-    <span ref={ref}>
-      {count}
-      {suffix}
-    </span>
-  );
-};
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
@@ -136,16 +103,15 @@ const Index = () => (
           transition={{ delay: 0.8 }}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
-          <a
-            href="https://wa.me/919876543210"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gradient-gold text-primary-foreground px-8 py-3.5 rounded-md font-semibold text-lg shadow-gold hover:opacity-90 transition-opacity"
-          >
-            Book Free Demo
-          </a>
+          <EnquiryPopup programName="Book Free Demo">
+            <button
+              className="bg-gradient-gold text-primary-foreground px-8 py-3.5 rounded-md font-semibold text-lg shadow-gold hover:opacity-90 transition-opacity"
+            >
+              Book Free Demo
+            </button>
+          </EnquiryPopup>
           <Link
-            to="#"
+            to="/programs"
             className="border border-primary/50 text-primary px-8 py-3.5 rounded-md font-semibold text-lg hover:bg-primary/10 transition-colors"
           >
             Explore Programs
@@ -197,7 +163,7 @@ const Index = () => (
             ].map((s, i) => (
               <div key={i} className="text-center">
                 <p className="text-3xl md:text-4xl font-bold text-gradient-gold">
-                  <CountUp end={s.num} suffix={s.suffix} />
+                  <Counter value={s.num} suffix={s.suffix} />
                 </p>
                 <p className="text-muted-foreground text-sm mt-1">{s.label}</p>
               </div>
@@ -227,7 +193,7 @@ const Index = () => (
               thousands of students and professionals. His mission: to make every individual speak with confidence.
             </p>
             <Link
-              to="#"
+              to="/founder"
               className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
             >
               Know His Story <ArrowRight size={16} />
@@ -260,7 +226,7 @@ const Index = () => (
         </div>
         <div className="text-center mt-10">
           <Link
-            to="#"
+            to="/programs"
             className="inline-flex items-center gap-2 bg-gradient-gold text-primary-foreground px-6 py-3 rounded-md font-semibold hover:opacity-90 transition-opacity"
           >
             View All Programs <ArrowRight size={16} />

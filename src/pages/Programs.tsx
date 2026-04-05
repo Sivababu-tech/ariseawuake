@@ -63,6 +63,8 @@ const programs = [
   },
 ];
 
+import EnquiryPopup from "@/components/EnquiryPopup";
+
 const Programs = () => (
   <Layout>
     <section className="py-24">
@@ -104,14 +106,13 @@ const Programs = () => (
                         </div>
                       ))}
                     </div>
-                    <a
-                      href="https://wa.me/919876543210"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-gradient-gold text-primary-foreground px-6 py-2.5 rounded-md font-semibold text-sm hover:opacity-90 transition-opacity"
-                    >
-                      Enquire Now <ArrowRight size={14} />
-                    </a>
+                    <EnquiryPopup programName={p.title}>
+                        <button
+                          className="inline-flex items-center gap-2 bg-gradient-gold text-primary-foreground px-6 py-2.5 rounded-md font-semibold text-sm hover:opacity-90 transition-opacity"
+                        >
+                          Enquire Now <ArrowRight size={14} />
+                        </button>
+                    </EnquiryPopup>
                   </div>
                 </div>
               </div>
