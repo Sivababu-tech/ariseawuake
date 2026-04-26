@@ -29,7 +29,7 @@ const ContactMapSection = () => {
                         <div className="relative w-full h-[400px] md:h-[100%] rounded-xl overflow-hidden border border-border shadow-lg">
                             <img
                                 src={transformImg}
-                                alt="Arise Awake Students"
+                                alt="Arise Awuake Students"
                                 className="absolute inset-0 w-full h-full object-cover"
                             />
                             {/* Overlay */}

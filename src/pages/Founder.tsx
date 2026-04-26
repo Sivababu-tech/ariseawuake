@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
 import CTASection from "@/components/CTASection";
-import founderImg from "@/assets/founder.jpg";
-import heroBg from "@/assets/hero-bg.jpg";
+import founderImg from "@/assets/founder-siva.jpeg";
+import heroBg from "@/assets/herosection-bg.jpg";
 import { Award, BookOpen, Heart, Target, Users } from "lucide-react";
 
 const fadeUp = {
@@ -17,7 +17,7 @@ const milestones = [
   { year: "Early Life", text: "Like many, Shiwa struggled with communication and confidence during his school and college years. Speaking in public was his biggest fear." },
   { year: "The Turning Point", text: "A single workshop on public speaking changed everything. Shiwa realized that confidence is not born — it's built. He committed to mastering the art." },
   { year: "The Journey", text: "Years of rigorous self-training, mentorship, and real-world practice transformed him into a confident speaker and trainer." },
-  { year: "Arise Awake", text: "Fueled by his own transformation, Shiwa founded Arise Awake to help others overcome the same fears he once faced." },
+  { year: "Arise Awuake", text: "Fueled by his own transformation, Shiwa founded Arise Awuake to help others overcome the same fears he once faced." },
   { year: "Today", text: "Over 1000+ students transformed, countless success stories, and a mission that grows stronger every day." },
 ];
 
@@ -41,7 +41,7 @@ const Founder = () => (
           <img
             src={founderImg}
             alt="Shiwa G Shankar"
-            className="w-72 h-72 md:w-80 md:h-80 rounded-2xl object-cover border-4 border-primary/20 shadow-gold"
+            className="w-64 h-64 md:w-80 md:h-80 aspect-square rounded-2xl object-cover object-top border-4 border-primary/20 shadow-gold"
             loading="lazy"
           />
           <div>
@@ -50,8 +50,8 @@ const Founder = () => (
               Shiwa G <span className="text-gradient-gold">Shankar</span>
             </h1>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              A passionate personality development trainer, public speaking coach, and the driving force behind 
-              Arise Awake. His mission is simple yet powerful: to help every individual find their voice and 
+              A passionate personality development trainer, public speaking coach, and the driving force behind
+              Arise Awuake. His mission is simple yet powerful: to help every individual find their voice and
               speak with confidence.
             </p>
           </div>
@@ -94,8 +94,8 @@ const Founder = () => (
             "My mission is to ensure no one stays silent because of <span className="text-gradient-gold">fear</span>"
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            Every person has a voice worth hearing. Shiwa believes that the ability to communicate confidently 
-            is not a talent — it's a skill that can be learned. Through Arise Awake, he has created a safe space 
+            Every person has a voice worth hearing. Shiwa believes that the ability to communicate confidently
+            is not a talent — it's a skill that can be learned. Through Arise Awuake, he has created a safe space
             where individuals shed their fears and discover the confident communicator within.
           </p>
         </motion.div>
@@ -132,15 +132,15 @@ const Founder = () => (
           <h3 className="text-2xl font-bold text-gradient-gold mb-4">A Message from Shiwa</h3>
           <div className="space-y-4 text-muted-foreground leading-relaxed italic">
             <p>
-              "When I look back at my journey, I see a young man who was terrified of speaking in front of 
+              "When I look back at my journey, I see a young man who was terrified of speaking in front of
               even 5 people. Today, I train hundreds to speak confidently on any stage."
             </p>
             <p>
-              "If you're reading this and you feel that fear — the sweaty palms, the racing heart, the 
+              "If you're reading this and you feel that fear — the sweaty palms, the racing heart, the
               trembling voice — I want you to know: I've been there. And I promise you, it gets better."
             </p>
             <p>
-              "Come to Arise Awake not just for a course, but for a transformation. I'll personally ensure 
+              "Come to Arise Awuake not just for a course, but for a transformation. I'll personally ensure
               you walk out as a different person — a confident, powerful communicator."
             </p>
           </div>

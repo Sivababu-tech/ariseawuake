@@ -24,15 +24,15 @@ const Results = () => {
   <Layout>
 
     <Helmet>
-      <title>Results | Success Stories | Arise Awake Flow</title>
+      <title>Results | Success Stories | Arise Awuake Flow</title>
 
       <meta
         name="description"
-        content="See real success stories of students who improved communication skills, gained confidence, and achieved career growth with Arise Awake Flow training programs."
+        content="See real success stories of students who improved communication skills, gained confidence, and achieved career growth with Arise Awuake Flow training programmes."
       />
       <meta
         name="keywords"
-        content="communication training, success stories, confidence building, interview skills, public speaking, career growth, Arise Awake Flow"
+        content="communication training, success stories, confidence building, interview skills, public speaking, career growth, Arise Awuake Flow"
       />
 
       <meta name="robots" content="index, follow" />
@@ -68,7 +68,7 @@ const Results = () => {
     {/* Transformation Stories */}
     <section className="py-20">
       <div className="container mx-auto px-4">
-        <SectionHeading title="Transformation Stories" subtitle="Before & After — the power of Arise Awake" />
+        <SectionHeading title="Transformation Stories" subtitle="Before & After — the power of Arise Awuake" />
         <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {[
             "https://www.youtube.com/embed/yck2h6h3_Bo",
@@ -131,12 +131,12 @@ const Results = () => {
         <motion.div {...fadeUp}>
           <img
             src={transformImg}
-            alt="Arise Awake students celebrating"
+            alt="Arise Awuake students celebrating"
             className="rounded-2xl border border-border w-full"
             loading="lazy"
           />
           <p className="text-center text-muted-foreground text-sm mt-4">
-            Our students celebrating after completing the Public Speaking Mastery program
+            Our students celebrating after completing the Public Speaking Mastery programme
           </p>
         </motion.div>
       </div>

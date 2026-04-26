@@ -7,7 +7,7 @@ const Footer = () => (
     <div className="container mx-auto px-4">
       <div className="grid md:grid-cols-3 gap-8">
         <div>
-          <img src={logo} alt="Arise Awake" className="h-12 mb-4" />
+          <img src={logo} alt="Arise Awuake" className="h-12 mb-4" />
           <p className="text-muted-foreground text-sm leading-relaxed">
             Personality Development & Public Speaking Academy by Shiwa G Shankar. Transforming lives through confidence and communication.
           </p>
@@ -16,7 +16,7 @@ const Footer = () => (
         <div>
           <h4 className="text-primary font-semibold mb-4">Quick Links</h4>
           <div className="space-y-2">
-            {["Home", "Founder", "Programs", "Results", "Contact"].map((l) => (
+            {["Home", "Founder", "Programmes", "Results", "Contact"].map((l) => (
               <Link
                 key={l}
                 to={l === "Home" ? "/" : `/${l.toLowerCase()}`}
@@ -49,7 +49,7 @@ const Footer = () => (
       </div>
 
       <div className="border-t border-border mt-8 pt-6 text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} Arise Awake. All rights reserved.
+        © {new Date().getFullYear()} Arise Awuake. All rights reserved.
       </div>
     </div>
   </footer>

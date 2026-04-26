@@ -23,7 +23,7 @@ const programs = [
   },
   {
     icon: Shield,
-    title: "Confidence Building Program",
+    title: "Confidence Building Programme",
     desc: "Build unshakable self-confidence that transforms every area of your life — from interviews to relationships.",
     forWhom: "Anyone lacking self-confidence",
     duration: "6 Weeks",
@@ -70,8 +70,8 @@ const Programs = () => (
     <section className="py-24">
       <div className="container mx-auto px-4">
         <SectionHeading
-          title="Our Programs"
-          subtitle="Each program is designed for real-world results. We focus on transformation, not just information."
+          title="Our Programmes"
+          subtitle="Each programme is designed for real-world results. We focus on transformation, not just information."
         />
 
         <div className="space-y-8 max-w-5xl mx-auto">

@@ -25,7 +25,7 @@ const EnquiryPopup = ({ children, programName }: EnquiryPopupProps) => {
         </DialogHeader>
         <ContactForm 
           title="Enquire Now" 
-          subtitle="Interested in this program? Send us a message and we'll help you get started." 
+          subtitle="Interested in this programme? Send us a message and we'll help you get started." 
           programName={programName}
         />
       </DialogContent>

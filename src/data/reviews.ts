@@ -18,19 +18,19 @@ export const reviews: Review[] = [
   {
     "name": "K. Raasi",
     "role": "2nd-year B.Tech Student, Gouthami Institute",
-    "text": "Good evening sir, This is Hehikakrishna a 2nd-year B.Tech student from Gouthami Institute of Technology and Management for Women. First and foremost, I would like to thank you for spending your valuable time with us during your busy schedule. It is truly our pleasure to have you as our trainer. When I reflect on my progress, I am amazed at how much I have improved. I have overcome my stage fear, and the awareness and training you gave us have helped me address my mistakes and speak my mind, which has been crucial for my growth. While I am proud of the progress I have made, I am still eager to improve and grow my skills even further. Thank you again for everything. ARISE, AWAKE.",
+    "text": "Good evening sir, This is Hehikakrishna a 2nd-year B.Tech student from Gouthami Institute of Technology and Management for Women. First and foremost, I would like to thank you for spending your valuable time with us during your busy schedule. It is truly our pleasure to have you as our trainer. When I reflect on my progress, I am amazed at how much I have improved. I have overcome my stage fear, and the awareness and training you gave us have helped me address my mistakes and speak my mind, which has been crucial for my growth. While I am proud of the progress I have made, I am still eager to improve and grow my skills even further. Thank you again for everything. Arise, Awuake.",
     "rating": 5
   },
   {
     "name": "Janaki Bellala",
     "role": "2nd-year B.Tech ECE Student, GITAMW",
-    "text": "Good evening everyone. These is janaki iam studying 2nd btech ECE in GITAMW at proddatur. I want to share my experience what I learnt and how it used for me in the arise awake class,before I join in arise awake class I have so much of stage fear and I don't know how to speak in public but now I have confidence to speak in public. Thank you sir.",
+    "text": "Good evening everyone. These is janaki iam studying 2nd btech ECE in GITAMW at proddatur. I want to share my experience what I learnt and how it used for me in the Arise Awuake class,before I join in Arise Awuake class I have so much of stage fear and I don't know how to speak in public but now I have confidence to speak in public. Thank you sir.",
     "rating": 5
   },
   {
     "name": "SODE JAYARAJU",
     "role": "Student / Family Member",
-    "text": "Arise awake English Language and communication skills training institute in Proddatur location.best English learning institute in Proddatur City.in my family member joined in this center they learned English quickly.Highly specialized center.staff was very experienced and Good attitude.Highly recommended in this center.Thank you entire staff.",
+    "text": "Arise Awuake English Language and communication skills training institute in Proddatur location.best English learning institute in Proddatur City.in my family member joined in this center they learned English quickly.Highly specialized center.staff was very experienced and Good attitude.Highly recommended in this center.Thank you entire staff.",
     "rating": 5
   },
   {

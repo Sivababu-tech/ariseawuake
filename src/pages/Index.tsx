@@ -5,8 +5,8 @@ import { MessageCircle, Target, Users, Star, ArrowRight, Mic, Shield, TrendingUp
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
 import CTASection from "@/components/CTASection";
-import heroBg from "@/assets/hero-bg.jpg";
-import founderImg from "@/assets/founder.jpg";
+import heroBg from "@/assets/herosection-bg.jpg";
+import founderImg from "@/assets/founder-siva.jpeg";
 import transformImg from "@/assets/transformation.jpg";
 import ContactMapSection from "@/components/ContactMapSection";
 import EnquiryPopup from "@/components/EnquiryPopup";
@@ -77,7 +77,7 @@ const Index = () => {
             transition={{ delay: 0.2 }}
             className="text-primary font-display font-medium tracking-widest uppercase text-sm mb-4"
           >
-            Arise Awake Personality Development
+            Arise Awuake Personality Development
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -115,7 +115,7 @@ const Index = () => {
               to="/programs"
               className="border border-primary/50 text-primary px-8 py-3.5 rounded-md font-semibold text-lg hover:bg-primary/10 transition-colors"
             >
-              Explore Programs
+              Explore Programmes
             </Link>
           </motion.div>
         </div>
@@ -150,9 +150,9 @@ const Index = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <motion.div {...fadeUp} className="max-w-3xl mx-auto text-center">
-            <SectionHeading title="The Arise Awake Solution" />
+            <SectionHeading title="The Arise Awuake Solution" />
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              At Arise Awake, we don't just teach — we <span className="text-primary font-semibold">transform</span>.
+              At Arise Awuake, we don't just teach — we <span className="text-primary font-semibold">transform</span>.
               Our proven methodology has helped 1000+ individuals overcome their fears, build unshakable confidence,
               and master the art of public speaking.
             </p>
@@ -181,10 +181,10 @@ const Index = () => {
             <img
               src={founderImg}
               alt="Shiwa G Shankar"
-              className="w-64 h-64 rounded-full object-cover border-4 border-primary/30 shadow-gold"
+              className="w-64 h-64 md:w-80 md:h-80 aspect-square rounded-full object-cover object-top border-4 border-primary/30 shadow-gold"
               loading="lazy"
-              width={256}
-              height={256}
+              width={320}
+              height={320}
             />
             <div>
               <p className="text-primary font-display text-sm font-medium tracking-widest uppercase mb-2">Meet the Founder</p>
@@ -207,7 +207,7 @@ const Index = () => {
       {/* Programs Preview */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <SectionHeading title="Our Programs" subtitle="Designed for real-world transformation" />
+          <SectionHeading title="Our Programmes" subtitle="Designed for real-world transformation" />
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {programs.map((p, i) => (
               <motion.div
@@ -230,7 +230,7 @@ const Index = () => {
               to="/programs"
               className="inline-flex items-center gap-2 bg-gradient-gold text-primary-foreground px-6 py-3 rounded-md font-semibold hover:opacity-90 transition-opacity"
             >
-              View All Programs <ArrowRight size={16} />
+              View All Programmes <ArrowRight size={16} />
             </Link>
           </div>
         </div>

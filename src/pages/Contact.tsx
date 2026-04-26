@@ -65,17 +65,6 @@ const Contact = () => {
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-4 bg-card border border-border rounded-lg p-4">
-                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                      <MapPin size={22} className="text-primary" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-sm">Address</p>
-                      <p className="text-muted-foreground text-xs leading-relaxed">
-                        Back Side Of Lakshmi Towers Apartment, 3/3, JNF Road, Jammalamadugu, Proddatur Rd, opposite to Haryana Jilebi Centre, Proddatur, Andhra Pradesh 516360
-                      </p>
-                    </div>
-                  </div>
                 </div>
               </div>
 
@@ -89,7 +78,7 @@ const Contact = () => {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Arise Awake Location"
+                  title="Arise Awuake Location"
                 />
               </div>
             </motion.div>
