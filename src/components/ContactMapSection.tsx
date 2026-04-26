@@ -24,19 +24,16 @@ const ContactMapSection = () => {
                 {/* SAME GRID + WIDTH */}
                 <div className="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
 
-                    {/* LEFT SIDE (MAP - SAME CARD STYLE) */}
+                    {/* LEFT SIDE (PHOTO - SAME CARD STYLE) */}
                     <motion.div {...fadeUp} className="w-full h-full">
-                        <div className="relative w-full h-[500px] md:h-[100%] rounded-xl overflow-hidden border border-border">
-
+                        <div className="relative w-full h-[400px] md:h-[100%] rounded-xl overflow-hidden border border-border shadow-lg">
                             <img
                                 src={transformImg}
-                                alt="Arise Awake Location"
+                                alt="Arise Awake Students"
                                 className="absolute inset-0 w-full h-full object-cover"
                             />
-
-                            {/* Optional overlay (like hero section) */}
-                            <div className="absolute inset-0 bg-black/30"></div>
-
+                            {/* Overlay */}
+                            <div className="absolute inset-0 bg-black/40" />
                         </div>
                     </motion.div>
 

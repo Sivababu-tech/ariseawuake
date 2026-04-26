@@ -17,7 +17,7 @@ const CTASection = () => (
       </p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
         <a
-          href="https://wa.me/919876543210"
+          href="https://wa.me/919573340708"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-background text-foreground px-8 py-3 rounded-md font-semibold hover:bg-background/90 transition-colors"
@@ -25,7 +25,7 @@ const CTASection = () => (
           WhatsApp Us
         </a>
         <a
-          href="tel:+919876543210"
+          href="tel:+919573340708"
           className="border-2 border-primary-foreground text-primary-foreground px-8 py-3 rounded-md font-semibold hover:bg-primary-foreground/10 transition-colors"
         >
           Call Now

@@ -5,6 +5,9 @@ import CTASection from "@/components/CTASection";
 import transformImg from "@/assets/transformation.jpg";
 import { Helmet } from "react-helmet-async";
 import Counter from "@/components/Counter";
+import { useReviews } from "@/hooks/useReviews";
+import ReviewCarousel from "@/components/ReviewCarousel";
+import { Loader2 } from "lucide-react";
 
 
 const fadeUp = {
@@ -14,7 +17,10 @@ const fadeUp = {
   transition: { duration: 0.6 },
 };
 
-const Results = () => (
+const Results = () => {
+  const { data: reviews, isLoading, error } = useReviews();
+  
+  return (
   <Layout>
 
     <Helmet>
@@ -90,6 +96,35 @@ const Results = () => (
       </div>
     </section>
 
+    {/* Google Reviews */}
+    <section className="py-24 relative overflow-hidden bg-background">
+      {/* Decorative elements */}
+      <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+      <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
+
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="text-center mb-8">
+          <h2 className="text-2xl md:text-[2.5rem] font-bold mb-2 text-gradient-gold py-2 leading-tight md:leading-normal">
+            Happy Students - Google Reviews
+          </h2>
+        </div>
+
+        {isLoading ? (
+          <div className="flex flex-col items-center justify-center py-20">
+            <Loader2 className="w-10 h-10 text-primary animate-spin mb-4" />
+            <p className="text-muted-foreground animate-pulse">Fetching real stories from Google...</p>
+          </div>
+        ) : error ? (
+          <div className="text-center py-10">
+            <p className="text-destructive font-medium mb-2">Oops! Something went wrong.</p>
+            <p className="text-muted-foreground text-sm">We couldn't load the reviews right now. Please try again later.</p>
+          </div>
+        ) : (
+          <ReviewCarousel reviews={reviews} />
+        )}
+      </div>
+    </section>
+
     {/* Group photo */}
     <section className="py-20 bg-card">
       <div className="container mx-auto px-4 max-w-4xl">
@@ -109,6 +144,7 @@ const Results = () => (
 
     <CTASection />
   </Layout>
-);
+  );
+};
 
 export default Results;

@@ -28,7 +28,7 @@ const Contact = () => {
                 <h3 className="text-xl font-bold mb-6">Let's Connect</h3>
                 <div className="space-y-4">
                   <a
-                    href="https://wa.me/919876543210"
+                    href="https://wa.me/919573340708"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-4 bg-card border border-border rounded-lg p-4 hover:border-primary/30 transition-colors group"
@@ -38,12 +38,12 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-sm">WhatsApp</p>
-                      <p className="text-muted-foreground text-sm">+91 98765 43210</p>
+                      <p className="text-muted-foreground text-sm">+91 95733 40708</p>
                     </div>
                   </a>
 
                   <a
-                    href="tel:+919876543210"
+                    href="tel:+919573340708"
                     className="flex items-center gap-4 bg-card border border-border rounded-lg p-4 hover:border-primary/30 transition-colors group"
                   >
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
@@ -51,7 +51,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-sm">Call Us</p>
-                      <p className="text-muted-foreground text-sm">+91 98765 43210</p>
+                      <p className="text-muted-foreground text-sm">+91 95733 40708</p>
                     </div>
                   </a>
 
@@ -61,7 +61,19 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-sm">Email</p>
-                      <p className="text-muted-foreground text-sm">info@ariseawake.in</p>
+                      <p className="text-muted-foreground text-sm">ariseawuake@gmail.com</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-4 bg-card border border-border rounded-lg p-4">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                      <MapPin size={22} className="text-primary" />
+                    </div>
+                    <div>
+                      <p className="font-semibold text-sm">Address</p>
+                      <p className="text-muted-foreground text-xs leading-relaxed">
+                        Back Side Of Lakshmi Towers Apartment, 3/3, JNF Road, Jammalamadugu, Proddatur Rd, opposite to Haryana Jilebi Centre, Proddatur, Andhra Pradesh 516360
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -70,7 +82,7 @@ const Contact = () => {
               {/* Map */}
               <div className="rounded-xl overflow-hidden border border-border min-h-[200px] flex-1">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.0!2d80.2!3d13.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDAw!5e0!3m2!1sen!2sin!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.2282339512394!2d78.5487548!3d14.756167600000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb478a3612144dd%3A0xe5e2c400bcef2d27!2sArise%20Awuake%20%22%20Communication%20Skills%20%26%20Personality%20Development%20Training%20Centre!5e0!3m2!1sen!2sin!4v1777185973246!5m2!1sen!2sin"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

@@ -34,15 +34,15 @@ const Footer = () => (
           <div className="space-y-3 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
               <Phone size={14} className="text-primary" />
-              <span>+91 98765 43210</span>
+              <span>+91 95733 40708</span>
             </div>
             <div className="flex items-center gap-2">
               <Mail size={14} className="text-primary" />
-              <span>info@ariseawake.in</span>
+              <span>ariseawuake@gmail.com</span>
             </div>
             <div className="flex items-start gap-2">
               <MapPin size={14} className="text-primary mt-0.5" />
-              <span>Arise Awake Academy, Tamil Nadu, India</span>
+              <span className="text-[10px] leading-tight">Back Side Of Lakshmi Towers Apartment, 3/3, JNF Road, Proddatur, AP 516360</span>
             </div>
           </div>
         </div>
