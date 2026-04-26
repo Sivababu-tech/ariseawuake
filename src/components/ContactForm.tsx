@@ -39,14 +39,11 @@ const ContactForm = ({
 
         setIsSubmitting(true);
 
-        // Append program name to the end of the message instead of the beginning
-        const finalMessage = `${form.message}\n\n[Enquiry for: ${programName}]`;
-
         const templateParams = {
             name: form.name,
             phone: form.phone,
             email: form.email,
-            message: finalMessage,
+            message: form.message,
             program_name: programName,
         };
 

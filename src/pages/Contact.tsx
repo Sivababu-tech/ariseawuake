@@ -56,7 +56,7 @@ const Contact = () => {
                   </a>
 
                   <a
-                    href="mailto:ariseawuake@gmail.com"
+                    href="mailto:ariseawuakeenquiry@gmail.com"
                     className="flex items-center gap-4 bg-card border border-border rounded-lg p-4 hover:border-primary/30 transition-colors group"
                   >
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
@@ -64,7 +64,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-sm">Email</p>
-                      <p className="text-muted-foreground text-sm">ariseawuake@gmail.com</p>
+                      <p className="text-muted-foreground text-sm">ariseawuakeenquiry@gmail.com</p>
                     </div>
                   </a>
 
