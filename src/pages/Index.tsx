@@ -7,7 +7,7 @@ import SectionHeading from "@/components/SectionHeading";
 import CTASection from "@/components/CTASection";
 import heroBg from "@/assets/herosection-bg.jpg";
 import founderImg from "@/assets/founder-siva.jpeg";
-import transformImg from "@/assets/transformation.jpg";
+import transformImg from "@/assets/Transformations.jpg";
 import ContactMapSection from "@/components/ContactMapSection";
 import EnquiryPopup from "@/components/EnquiryPopup";
 import Counter from "@/components/Counter";

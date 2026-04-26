@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import SectionHeading from "@/components/SectionHeading";
-import transformImg from "@/assets/transformation.jpg";
+import transformImg from "@/assets/contact-us.jpg";
 import ContactForm from "./ContactForm";
 
 const fadeUp = {

@@ -16,14 +16,20 @@ const Footer = () => (
         <div>
           <h4 className="text-primary font-semibold mb-4">Quick Links</h4>
           <div className="space-y-2">
-            {["Home", "Founder", "Programmes", "Results", "Contact"].map((l) => (
+            {[
+              { name: "Home", path: "/" },
+              { name: "Founder", path: "/founder" },
+              { name: "Programmes", path: "/programs" },
+              { name: "Results", path: "/results" },
+              { name: "Contact", path: "/contact" },
+            ].map((l) => (
               <Link
-                key={l}
-                to={l === "Home" ? "/" : `/${l.toLowerCase()}`}
+                key={l.name}
+                to={l.path}
                 className="block text-sm text-muted-foreground hover:text-primary transition-colors"
                 onClick={() => window.scrollTo(0, 0)}
               >
-                {l}
+                {l.name}
               </Link>
             ))}
           </div>
@@ -32,14 +38,14 @@ const Footer = () => (
         <div>
           <h4 className="text-primary font-semibold mb-4">Contact</h4>
           <div className="space-y-3 text-sm text-muted-foreground">
-            <div className="flex items-center gap-2">
+            <a href="tel:+919573340708" className="flex items-center gap-2 hover:text-primary transition-colors">
               <Phone size={14} className="text-primary" />
               <span>+91 95733 40708</span>
-            </div>
-            <div className="flex items-center gap-2">
+            </a>
+            <a href="mailto:ariseawuake@gmail.com" className="flex items-center gap-2 hover:text-primary transition-colors">
               <Mail size={14} className="text-primary" />
               <span>ariseawuake@gmail.com</span>
-            </div>
+            </a>
             <div className="flex items-start gap-2">
               <MapPin size={14} className="text-primary mt-0.5" />
               <span className="text-[10px] leading-tight">Back Side Of Lakshmi Towers Apartment, 3/3, JNF Road, Proddatur, AP 516360</span>

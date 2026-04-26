@@ -55,15 +55,18 @@ const Contact = () => {
                     </div>
                   </a>
 
-                  <div className="flex items-center gap-4 bg-card border border-border rounded-lg p-4">
-                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                  <a
+                    href="mailto:ariseawuake@gmail.com"
+                    className="flex items-center gap-4 bg-card border border-border rounded-lg p-4 hover:border-primary/30 transition-colors group"
+                  >
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                       <Mail size={22} className="text-primary" />
                     </div>
                     <div>
                       <p className="font-semibold text-sm">Email</p>
                       <p className="text-muted-foreground text-sm">ariseawuake@gmail.com</p>
                     </div>
-                  </div>
+                  </a>
 
                 </div>
               </div>

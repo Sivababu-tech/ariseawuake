@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
 import CTASection from "@/components/CTASection";
-import transformImg from "@/assets/transformation.jpg";
+import transformImg from "@/assets/Transformations.jpg";
 import { Helmet } from "react-helmet-async";
 import Counter from "@/components/Counter";
 import { useReviews } from "@/hooks/useReviews";
